@@ -1,4 +1,4 @@
-[
+export const seriesData=[
   {
     "name": "Lovely Runner",
     "id": "lovely-runner",

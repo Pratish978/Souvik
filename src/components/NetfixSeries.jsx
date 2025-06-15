@@ -1,11 +1,11 @@
-import SeriesData from "../api/SeriesData.json";
+import { seriesData } from "../api/seriesData";
 import "./NetflixSeries.css"; 
 
   export const NetflixSeries=()=>{
   return(
     <ul className="series-container">
       {
-        SeriesData.map((currElem)=>{
+        seriesData.map((currElem)=>{
           return(
     <li key={currElem.id}>
     <div>
