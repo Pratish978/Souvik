@@ -1,0 +1,19 @@
+.series-container {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  list-style: none;
+}
+
+.series-container li {
+  margin-bottom: 40px;
+  border: 1px solid white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.series-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
