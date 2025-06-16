@@ -3,7 +3,7 @@ export const seriesData = [
     name: "Lovely Runner",
     id: "lovely-runner",
     img_url: "/lr.jpg",
-    rating: "9.8",
+    rating: "8.0",
     description: "Im Sol travels back in time to prevent the tragic fate of her favorite star, Ryu Sun Jae.",
     cast: ["Kim Hye Yoon", "Byeon Woo Seok", "Song Geon Hee"],
     genre: ["Romantic Comedy", "Fantasy"],
