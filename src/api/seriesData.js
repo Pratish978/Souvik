@@ -70,4 +70,11 @@ export const seriesData = [
     watch_url: "https://www.viki.com/tv/23456789c-queen-of-tears"
   }
 ];
-
+export const aboutInfo = {
+  title: "Netflix Series App",
+  description:
+    "This is a React-based Netflix series showcase app where users can browse, filter, and explore top series across various genres and ratings.",
+  creator: "Pratish Bhongle",
+  purpose: "Practice Project",
+  technologies: ["React", "Vite", "CSS", "JavaScript"],
+};
