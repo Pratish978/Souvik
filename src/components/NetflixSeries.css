@@ -11,7 +11,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #111;
+  background-color: #e50914;
   color: #fff;
   padding: 1rem 2rem;
   flex-wrap: wrap;
@@ -35,7 +35,7 @@
 }
 
 .nav-links li a:hover {
-  color: #e50914;
+  color: #1f1f1f;
 }
 
 /* Series Grid */
@@ -100,7 +100,7 @@
 }
 
 /* Responsive Navbar for Small Screens */
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   .nav-links {
     flex-direction: column;
     align-items: center;
