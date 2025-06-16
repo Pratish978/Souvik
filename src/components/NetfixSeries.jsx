@@ -1,22 +1,38 @@
+import React, { useState } from "react";
 import { seriesData } from "../api/seriesData";
 import "./NetflixSeries.css";
 
 export const NetflixSeries = () => {
+  const [filteredData, setFilteredData] = useState(seriesData);
+
+  const handleTopRatedClick = () => {
+    const topRated = seriesData.filter((series) => series.rating > 8.5);
+    setFilteredData(topRated);
+  };
+
+  const handleHomeClick = () => {
+    setFilteredData(seriesData);
+  };
+
   return (
     <div>
       {/* Navbar */}
       <nav className="navbar">
         <h1>Netflix Series</h1>
         <ul className="nav-links">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Top Rated</a></li>
+          <li>
+            <a href="#" onClick={handleHomeClick}>Home</a>
+          </li>
+          <li>
+            <a href="#" onClick={handleTopRatedClick}>Top Rated</a>
+          </li>
           <li><a href="#">Genres</a></li>
         </ul>
       </nav>
 
       {/* Series List */}
       <ul className="series-container">
-        {seriesData.map((currElem) => (
+        {filteredData.map((currElem) => (
           <li key={currElem.id} className="series-card">
             <img
               src={currElem.img_url}
